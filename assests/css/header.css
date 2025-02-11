@@ -1,0 +1,143 @@
+*{
+    font-family: Poppins, Arial;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+/* .header::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.3rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('/assests/img/code.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.header .linkedin .fa-brands{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 2rem;
+    color: white;
+    transition: 500ms;
+}
+.header .github .fa-brands{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    right: 0.63rem;
+    width: 1.5rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 2rem;
+    color: white;
+    transition: 500ms;
+}
+.header .github .fa-brands:hover{
+    color: #BE10E0;
+}
+
+.header .linkedin .fa-brands:hover{
+    color: #BE10E0;
+}
+
+
+.header .photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    
+}
+
+.header .informacaoHeader .NomeHeader{
+    text-align: center;
+    max-width: 308px;
+}
+
+.informacoes p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+.informacoes .job::before {
+    margin-right: 5px;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assests/img/icons/job.svg');
+}
+
+.informacoes .localiza::before{
+    margin-right: 5px;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assests/img/icons/localiza.svg');
+}
+.informacoes .phone::before{
+    margin-right: 5px;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assests/img/icons/phone.svg');
+}
+
+.informacoes .email::before{
+    margin-right: 5px;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assests/img/icons/email.svg');
+}
+
+@media only screen and (min-width: 768px) {
+    .header{
+       display: grid;
+       grid-template-areas: "photo informacao";
+    }
+    .header .photo{
+        grid-area: photo;
+        margin: auto;
+
+    }
+    .header .informacaoHeader .NomeHeader{
+        text-align: start;
+        max-width: 250px;
+    
+    }
+    .header .informacaoHeader{
+        grid-area: informacao;
+
+    }
+}

@@ -1,0 +1,18 @@
+.informacoes .phone a{
+    color: white;
+    text-decoration: none;
+}
+
+.informacoes .phone a:hover{
+    color: rgba(255, 255, 255, 0.722);
+}
+
+.informacoes .email a{
+    color: white;
+    text-decoration: none;
+}
+
+.informacoes .email a:hover{
+    color: rgba(255, 255, 255, 0.722);
+
+}

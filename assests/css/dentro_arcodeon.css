@@ -1,0 +1,104 @@
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+.habilidades li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+    font-weight: 700;
+}
+
+.habilidades .html::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assests/img/habilidades/html.svg");
+    margin-right: .1rem;
+}
+.habilidades .css::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assests/img/habilidades/css.svg");
+    margin-right: .1rem;
+}
+
+.habilidades .javascript::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assests/img/habilidades/javascript.svg");
+    margin-right: .1rem;
+}
+
+.habilidades .python::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assests/img/habilidades/python.svg");
+    margin-right: .1rem;
+}
+
+.habilidades .sql::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assests/img/habilidades/sql.svg");
+    margin-right: .1rem;
+}
+
+
+/* Sobre min */
+
+.sobre{
+    display: flex;
+    margin: 1rem 1rem 3rem 3rem;
+}
+
+.certificado{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.certificado li{
+    padding: 1rem 1rem;
+    font-family: Poppins;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificado img{
+   width: 10rem;
+   margin-bottom: .5rem;
+   
+   
+}
+
+.certificado samp{
+    text-align: center;
+}

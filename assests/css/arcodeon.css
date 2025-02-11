@@ -1,0 +1,56 @@
+.arcodeon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    transition: 0.45s;
+}
+.arcodeon.open,
+.arcodeon:hover{
+    background-color: #be10e0ff;
+    color: white;
+}
+
+.arcodeon .trigger{
+    color: white;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.arcodeon .trigger:hover{
+    cursor: pointer;
+
+}
+.arcodeon .trigger::after{
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assests/img/seta.svg');
+    transition: 0.55s;
+}
+.arcodeon.open .trigger::after{
+    transform: rotate(180deg);
+}
+.arcodeon .content{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .55s ease-in-out;
+}
+.arcodeon.open .content{
+    display:block;
+    height: auto;
+    opacity: 1;
+    padding: 0;
+    padding-right: 1rem;
+}

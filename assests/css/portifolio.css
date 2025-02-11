@@ -1,0 +1,37 @@
+.portifolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    list-style: none;
+}
+
+.portifolio li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: .5rem 0;
+}
+
+.portifolio li .title{
+    display: flex;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.portifolio li a{
+    font-size: .9rem;
+    color: black;
+}
+
+.portifolio li .title::before{
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assests/img/potifolio/github.svg");
+    margin-right: .5rem;
+}
